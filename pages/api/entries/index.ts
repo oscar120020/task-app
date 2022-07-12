@@ -36,7 +36,7 @@ const getEntries = async (res: NextApiResponse<Data>) => {
 
 const addEntries = async(req: NextApiRequest, res: NextApiResponse) => {
   const {description} = req.body
-
+  
   const newEntry = new EntryModel({
     description,
     createdAt: Date.now()

@@ -23,7 +23,7 @@ export const connect = async() => {
 
     await mongoose.connect(process.env.MONGODB_URI || "")
     mongoConnection.isConnected = 1
-    console.log("Conexión establecida", process.env.MONGODB_URI);
+    console.log("Conexión establecida");
     
 }
 

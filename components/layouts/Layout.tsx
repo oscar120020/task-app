@@ -13,6 +13,12 @@ export const Layout = ({title = "OpenJira", children}: Props) => {
     <Box sx={{flexFlow: 1}}>
         <Head>
             <title>{title}</title>
+            <meta property="og:title" content={title ? `${title.substring(0, 10)}...` : "Task application"} />
+            <meta
+              property="og:description"
+              content={title ? `${title.substring(0, 18)}...` : "Task application"}
+            />
+            <meta property="og:image" content={`${origin}/images/task-app.png`} />
         </Head>
 
         <Navbar/>
