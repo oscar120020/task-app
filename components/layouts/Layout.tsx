@@ -8,6 +8,8 @@ interface Props {
     children: JSX.Element | JSX.Element[]
 }
 
+const origin = typeof window === "undefined" ? "" : window.location.origin;
+
 export const Layout = ({title = "OpenJira", children}: Props) => {
   return (
     <Box sx={{flexFlow: 1}}>
