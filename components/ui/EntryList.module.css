@@ -1,0 +1,9 @@
+.dragging {
+    background-color: rgba(75, 75, 75, 0.233);
+    border-radius: 10px;
+    border: 2px dashed white;
+}
+
+.dragging_now {
+    border: 2px dashed #19857b;
+}
